@@ -1,8 +1,8 @@
 // [ THE ARCHITECT ] - THE INFINITE ILLUSION ENGINE
-const wss = new
-WebSocket.Server({ port:
-process.env.PORT || 8080 });
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: process.env.PORT || 8080 });
 const SIGNAL_SEPARATOR = '\x1e';
+
 
 console.log('[SYSTEM] السيرفر الأوتوماتيكي شاعل... كيتسنى الضحايا.');
 
